@@ -15,7 +15,6 @@ RUN wget https://github.com/pocketbase/pocketbase/releases/download/v${VERSION}/
     && unzip pocketbase_${VERSION}_${BUILDX_ARCH}.zip \
     && chmod +x /pocketbase
 
-RUN apk update && apk add ca-certificates && rm -rf /var/cache/apk/*
 
 EXPOSE 8090
 
